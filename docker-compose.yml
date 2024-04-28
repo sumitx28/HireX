@@ -34,7 +34,7 @@ services:
       - localnet
     environment:
       DATABASE_URI: mongodb+srv://admin:CSCI5709HireX@hirex-cluster.f0evks5.mongodb.net/HireXDB?retryWrites=true&w=majority&appName=hirex-cluster
-      GITHUB_PAT: ithub_pat_11BG25PQI0xKzXCTXXDFzW_iZLmfyxE1PHXSWcNMkOITXKdqa2DcxYqUIYsIHNaxT5CSP27PXDVwoQzlrf
+      GITHUB_PAT: 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
       FRONTEND_URL: http://localhost:3000/
       JWT_SECRET: 56838758b6499ae8321f9228b481ac86707b01e294a29ad7c33d431085fc607b
       JWT_VALIDITY: 7*24*60*60*1000
