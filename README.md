@@ -1,4 +1,10 @@
 # HireX: Hire Talent Quick
+HireX project aims to revolutionize recruitment by offering an all-in-one hiring hub. This platform
+simplifies job posting, application management, and interview coordination, providing realtime collaboration through features like video interviews and chat support. Our objectives
+center on optimizing the recruitment journey for recruiters, interviewers, and candidates by
+enhancing speed, interaction, and decision-making through data-driven insights. Ultimately,
+HireX aims to streamline the process, making it more engaging and adaptive to evolving
+demands.
 
 ## Authors
 
