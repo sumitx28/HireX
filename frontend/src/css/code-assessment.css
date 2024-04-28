@@ -1,0 +1,6 @@
+/* @author Roshni Joshi (roshni.joshi@dal.ca) */
+
+.content-center {
+  display: flex;
+  justify-content: center;
+}
