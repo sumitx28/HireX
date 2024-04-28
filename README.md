@@ -22,6 +22,7 @@ Key variables which are used in the startup of the app.
 - `DATABASE_URI`: `MongoDB` url
 - `GITHUB_PAT`: Github Personal Access Token
 - `FRONTEND_URL`: URL of frontend deployment
+- `HIREX_URL`: HireX url
 - `JWT_SECRET`: JWT Secret Key
 - `JWT_VALIDITY`: Validity of JWT Token
 - `SMTP_USERNAME`: SMTP Gmail Username
