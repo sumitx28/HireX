@@ -28,9 +28,47 @@ Key variables which are used in the startup of the app.
 - `SMTP_USERNAME`: SMTP Gmail Username
 - `SMTP_PASSWORD`: SMTP Gmail Password
 
-## Deployment
+Refer to [docker-compose.yaml](./docker-compose.yaml)
 
-The web application is deployed on Netlify and can be accessed via above mentioned URL.
+## Starting the Application
+
+### Running All Services with latest build
+To start the application containers with the latest build:
+
+```bash
+docker-compose -f docker-compose.yaml up -d --build
+```
+
+### Running All Services
+
+To start both the backend and MySQL database services as defined in the `docker-compose.yaml` file:
+
+```bash
+docker-compose -f docker-compose.yaml up -d
+```
+
+### Running only a Database (mysql)
+To start only the mysql database as defined in the docker-compose.yaml file:
+```bash
+docker-compose -f docker-compose.yaml up -d db
+```
+
+## Additional Docker Commands
+
+### Rebuild containers after changes
+```bash
+docker-compose -f docker-compose.yaml build
+```
+### Stopping Services
+To stop all running containers:
+```bash
+docker-compose -f docker-compose.yaml down
+```
+
+### Remove all volumes (including database data):
+```bash
+docker-compose -f docker-compose.yaml down -v
+```
 
 
 ## Built With

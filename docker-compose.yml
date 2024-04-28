@@ -1,0 +1,58 @@
+version: '1.0'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+    networks:
+      - localnet
+
+  code-assessment:
+    build:
+      context: ./backend/code-assessment
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    networks:
+      - localnet
+    environment:
+      HIREX_FRONTEND_URL: http://localhost:3000/
+      HIREX_URL: http://localhost:8080/
+
+  hire-x:
+    build:
+      context: ./backend/hire-x
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - localnet
+    environment:
+      DATABASE_URI: mongodb+srv://admin:CSCI5709HireX@hirex-cluster.f0evks5.mongodb.net/HireXDB?retryWrites=true&w=majority&appName=hirex-cluster
+      GITHUB_PAT: ithub_pat_11BG25PQI0xKzXCTXXDFzW_iZLmfyxE1PHXSWcNMkOITXKdqa2DcxYqUIYsIHNaxT5CSP27PXDVwoQzlrf
+      FRONTEND_URL: http://localhost:3000/
+      JWT_SECRET: 56838758b6499ae8321f9228b481ac86707b01e294a29ad7c33d431085fc607b
+      JWT_VALIDITY: 7*24*60*60*1000
+      SMTP_USERNAME: mailalert35@gmail.com
+      SMTP_PASSWORD: suof euvh xgwy lbeb
+
+  video-interview:
+    build:
+      context: ./backend/video-interview
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    networks:
+      - localnet
+    environment:
+      HIREX_FRONTEND_URL: http://localhost:3000/
+      HIREX_URL: http://localhost:8080/
+
+networks:
+  localnet:
+    driver: bridge

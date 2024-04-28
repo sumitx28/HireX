@@ -2,3 +2,11 @@
 backend/hire-x/src/.DS_Store
 backend/hire-x/src/main/.DS_Store
 .DS_Store
+backend/.idea/backend.iml
+backend/.idea/compiler.xml
+backend/.idea/encodings.xml
+backend/.idea/jarRepositories.xml
+backend/.idea/misc.xml
+backend/.idea/modules.xml
+backend/.idea/vcs.xml
+backend/.idea/workspace.xml

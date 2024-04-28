@@ -1,10 +1,16 @@
 // @author Roshni Joshi (roshni.joshi@dal.ca)
 
-export const HIRE_X_API = "https://hirex-1kjg.onrender.com/";
-export const HIRE_X_CODE_ASSESSMENT_API = "https://code-assessment.onrender.com/";
-export const VIDEO_INTERVIEW_CALL_API = "wss://hirex-6tpa.onrender.com/";
-export const VIDEO_INTERVIEW_CHAT_API = "wss://hirex-6tpa.onrender.com/chat/";
-export const VIDEO_INTERVIEW_REST_API = "https://hirex-6tpa.onrender.com/";
+// export const HIRE_X_API = "https://hirex-1kjg.onrender.com/";
+// export const HIRE_X_CODE_ASSESSMENT_API = "https://code-assessment.onrender.com/";
+// export const VIDEO_INTERVIEW_CALL_API = "wss://hirex-6tpa.onrender.com/";
+// export const VIDEO_INTERVIEW_CHAT_API = "wss://hirex-6tpa.onrender.com/chat/";
+// export const VIDEO_INTERVIEW_REST_API = "https://hirex-6tpa.onrender.com/";
+
+export const HIRE_X_API = "http://localhost:8080/";
+export const HIRE_X_CODE_ASSESSMENT_API = "http://localhost:8081/";
+export const VIDEO_INTERVIEW_CALL_API = "wss://localhost:8082/";
+export const VIDEO_INTERVIEW_CHAT_API = "wss:/localhost:8082/chat/";
+export const VIDEO_INTERVIEW_REST_API = "hhttp://localhost:8082/";
 
 export const HIRE_X_STATUS = "status";
 export const CODE_ASSESSMENT_STATUS = "status";
