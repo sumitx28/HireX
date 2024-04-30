@@ -61,6 +61,9 @@ docker-compose -f docker-compose.yaml down
 
 ## Built With
 
-* [ReactJS](https://legacy.reactjs.org/docs/getting-started.html/) - Web Framework
-* [npm](https://docs.npmjs.com//) - Dependency Management
+* [Java](https://www.java.com/en/)
+* [SpringBoot](https://spring.io/projects/spring-boot)
+* [ReactJS](https://legacy.reactjs.org/docs/getting-started.html/)
+* [npm](https://docs.npmjs.com//)
+* [MongoDB](https://www.mongodb.com/)
 
